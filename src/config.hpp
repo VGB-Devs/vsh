@@ -5,7 +5,7 @@
 #include "./include/utils/Colours.hpp"
 #include "./include/utils/configUtilities.hpp"
 
-std::string vshTerminalPrefix = magenta + user + reset + "@" + cyan + host + green + " " + pwd + red + " $ " + reset;
+std::string vshTerminalPrefix = magenta + user + reset + "@" + cyan + hostname() + green + " " + pwd + red + " $ " + reset;
 
 /*
     Colours:
