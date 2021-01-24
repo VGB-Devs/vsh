@@ -11,11 +11,11 @@ std::string hostname() {
 	getline(myfile,line);
 	return line;
     }
-    else return "Unable to open file";
+    else return "null";
 
 }
-char* hostChar = std::getenv("HOSTNAME");
-std::string host = hostChar != nullptr ? std::string(hostChar) : "unknown";
+
+std::string host = hostname() != "null" ? hostname() : "unknown";
 
 char* userChar = std::getenv("USER");
 std::string user = std::string(userChar);
