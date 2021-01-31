@@ -9,5 +9,5 @@ class Command {
 	std::string usage;
 	virtual int run(std::vector<std::string> args) {
 	    return 0;
-	}
+	};
 };
